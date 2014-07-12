@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2098BED1971E67E0073B016 /* Dictionary+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BCF1971E67E0073B016 /* Dictionary+Swifter.swift */; };
+		F2098BEE1971E67E0073B016 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2098BD01971E67E0073B016 /* Info.plist */; };
+		F2098BEF1971E67E0073B016 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD11971E67E0073B016 /* JSON.swift */; };
+		F2098BF01971E67E0073B016 /* NSURL+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD21971E67E0073B016 /* NSURL+Swifter.swift */; };
+		F2098BF11971E67E0073B016 /* String+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD31971E67E0073B016 /* String+Swifter.swift */; };
+		F2098BF21971E67E0073B016 /* Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD61971E67E0073B016 /* Swifter.swift */; };
+		F2098BF31971E67E0073B016 /* SwifterAccountsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD71971E67E0073B016 /* SwifterAccountsClient.swift */; };
+		F2098BF41971E67E0073B016 /* SwifterAppOnlyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD81971E67E0073B016 /* SwifterAppOnlyClient.swift */; };
+		F2098BF51971E67E0073B016 /* SwifterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BD91971E67E0073B016 /* SwifterAuth.swift */; };
+		F2098BF61971E67E0073B016 /* SwifterClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDA1971E67E0073B016 /* SwifterClientProtocol.swift */; };
+		F2098BF71971E67E0073B016 /* SwifterCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDB1971E67E0073B016 /* SwifterCredential.swift */; };
+		F2098BF81971E67E0073B016 /* SwifterFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDC1971E67E0073B016 /* SwifterFavorites.swift */; };
+		F2098BF91971E67E0073B016 /* SwifterFollowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDD1971E67E0073B016 /* SwifterFollowers.swift */; };
+		F2098BFA1971E67E0073B016 /* SwifterHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDE1971E67E0073B016 /* SwifterHelp.swift */; };
+		F2098BFB1971E67E0073B016 /* SwifterHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BDF1971E67E0073B016 /* SwifterHTTPRequest.swift */; };
+		F2098BFC1971E67E0073B016 /* SwifterLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE01971E67E0073B016 /* SwifterLists.swift */; };
+		F2098BFD1971E67E0073B016 /* SwifterMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE11971E67E0073B016 /* SwifterMessages.swift */; };
+		F2098BFE1971E67E0073B016 /* SwifterOAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE21971E67E0073B016 /* SwifterOAuthClient.swift */; };
+		F2098BFF1971E67E0073B016 /* SwifterPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE31971E67E0073B016 /* SwifterPlaces.swift */; };
+		F2098C001971E67E0073B016 /* SwifterSavedSearches.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE41971E67E0073B016 /* SwifterSavedSearches.swift */; };
+		F2098C011971E67E0073B016 /* SwifterSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE51971E67E0073B016 /* SwifterSearch.swift */; };
+		F2098C021971E67E0073B016 /* SwifterSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE61971E67E0073B016 /* SwifterSpam.swift */; };
+		F2098C031971E67E0073B016 /* SwifterStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE71971E67E0073B016 /* SwifterStreaming.swift */; };
+		F2098C041971E67E0073B016 /* SwifterSuggested.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE81971E67E0073B016 /* SwifterSuggested.swift */; };
+		F2098C051971E67E0073B016 /* SwifterTimelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BE91971E67E0073B016 /* SwifterTimelines.swift */; };
+		F2098C061971E67E0073B016 /* SwifterTrends.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEA1971E67E0073B016 /* SwifterTrends.swift */; };
+		F2098C071971E67E0073B016 /* SwifterTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEB1971E67E0073B016 /* SwifterTweets.swift */; };
+		F2098C081971E67E0073B016 /* SwifterUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEC1971E67E0073B016 /* SwifterUsers.swift */; };
 		F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */; };
 		F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C5111971E4FC00FB8790 /* ViewController.swift */; };
 		F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7C5131971E4FC00FB8790 /* Main.storyboard */; };
@@ -25,6 +53,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2098BCF1971E67E0073B016 /* Dictionary+Swifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+Swifter.swift"; path = "Libraries/Swifter/Dictionary+Swifter.swift"; sourceTree = "<group>"; };
+		F2098BD01971E67E0073B016 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Libraries/Swifter/Info.plist; sourceTree = "<group>"; };
+		F2098BD11971E67E0073B016 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Libraries/Swifter/JSON.swift; sourceTree = "<group>"; };
+		F2098BD21971E67E0073B016 /* NSURL+Swifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSURL+Swifter.swift"; path = "Libraries/Swifter/NSURL+Swifter.swift"; sourceTree = "<group>"; };
+		F2098BD31971E67E0073B016 /* String+Swifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Swifter.swift"; path = "Libraries/Swifter/String+Swifter.swift"; sourceTree = "<group>"; };
+		F2098BD51971E67E0073B016 /* Swifter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Swifter.h; path = Libraries/Swifter/Swifter.h; sourceTree = "<group>"; };
+		F2098BD61971E67E0073B016 /* Swifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Swifter.swift; path = Libraries/Swifter/Swifter.swift; sourceTree = "<group>"; };
+		F2098BD71971E67E0073B016 /* SwifterAccountsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterAccountsClient.swift; path = Libraries/Swifter/SwifterAccountsClient.swift; sourceTree = "<group>"; };
+		F2098BD81971E67E0073B016 /* SwifterAppOnlyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterAppOnlyClient.swift; path = Libraries/Swifter/SwifterAppOnlyClient.swift; sourceTree = "<group>"; };
+		F2098BD91971E67E0073B016 /* SwifterAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterAuth.swift; path = Libraries/Swifter/SwifterAuth.swift; sourceTree = "<group>"; };
+		F2098BDA1971E67E0073B016 /* SwifterClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterClientProtocol.swift; path = Libraries/Swifter/SwifterClientProtocol.swift; sourceTree = "<group>"; };
+		F2098BDB1971E67E0073B016 /* SwifterCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterCredential.swift; path = Libraries/Swifter/SwifterCredential.swift; sourceTree = "<group>"; };
+		F2098BDC1971E67E0073B016 /* SwifterFavorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterFavorites.swift; path = Libraries/Swifter/SwifterFavorites.swift; sourceTree = "<group>"; };
+		F2098BDD1971E67E0073B016 /* SwifterFollowers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterFollowers.swift; path = Libraries/Swifter/SwifterFollowers.swift; sourceTree = "<group>"; };
+		F2098BDE1971E67E0073B016 /* SwifterHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterHelp.swift; path = Libraries/Swifter/SwifterHelp.swift; sourceTree = "<group>"; };
+		F2098BDF1971E67E0073B016 /* SwifterHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterHTTPRequest.swift; path = Libraries/Swifter/SwifterHTTPRequest.swift; sourceTree = "<group>"; };
+		F2098BE01971E67E0073B016 /* SwifterLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterLists.swift; path = Libraries/Swifter/SwifterLists.swift; sourceTree = "<group>"; };
+		F2098BE11971E67E0073B016 /* SwifterMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterMessages.swift; path = Libraries/Swifter/SwifterMessages.swift; sourceTree = "<group>"; };
+		F2098BE21971E67E0073B016 /* SwifterOAuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterOAuthClient.swift; path = Libraries/Swifter/SwifterOAuthClient.swift; sourceTree = "<group>"; };
+		F2098BE31971E67E0073B016 /* SwifterPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterPlaces.swift; path = Libraries/Swifter/SwifterPlaces.swift; sourceTree = "<group>"; };
+		F2098BE41971E67E0073B016 /* SwifterSavedSearches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSavedSearches.swift; path = Libraries/Swifter/SwifterSavedSearches.swift; sourceTree = "<group>"; };
+		F2098BE51971E67E0073B016 /* SwifterSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSearch.swift; path = Libraries/Swifter/SwifterSearch.swift; sourceTree = "<group>"; };
+		F2098BE61971E67E0073B016 /* SwifterSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSpam.swift; path = Libraries/Swifter/SwifterSpam.swift; sourceTree = "<group>"; };
+		F2098BE71971E67E0073B016 /* SwifterStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterStreaming.swift; path = Libraries/Swifter/SwifterStreaming.swift; sourceTree = "<group>"; };
+		F2098BE81971E67E0073B016 /* SwifterSuggested.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSuggested.swift; path = Libraries/Swifter/SwifterSuggested.swift; sourceTree = "<group>"; };
+		F2098BE91971E67E0073B016 /* SwifterTimelines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterTimelines.swift; path = Libraries/Swifter/SwifterTimelines.swift; sourceTree = "<group>"; };
+		F2098BEA1971E67E0073B016 /* SwifterTrends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterTrends.swift; path = Libraries/Swifter/SwifterTrends.swift; sourceTree = "<group>"; };
+		F2098BEB1971E67E0073B016 /* SwifterTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterTweets.swift; path = Libraries/Swifter/SwifterTweets.swift; sourceTree = "<group>"; };
+		F2098BEC1971E67E0073B016 /* SwifterUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterUsers.swift; path = Libraries/Swifter/SwifterUsers.swift; sourceTree = "<group>"; };
+		F2098C101971E9E30073B016 /* JDFTwitterSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDFTwitterSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F2C7C50A1971E4FC00FB8790 /* JDFTwitterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDFTwitterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7C50E1971E4FC00FB8790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2098C091971E9140073B016 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F2C7C5011971E4FC00FB8790 = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +141,11 @@
 		F2C7C50C1971E4FC00FB8790 /* JDFTwitterSample */ = {
 			isa = PBXGroup;
 			children = (
+				F2C7C52C1971E51C00FB8790 /* Libraries */,
+				F2098C091971E9140073B016 /* Classes */,
 				F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */,
 				F2C7C5111971E4FC00FB8790 /* ViewController.swift */,
+				F2098C101971E9E30073B016 /* JDFTwitterSample-Bridging-Header.h */,
 				F2C7C5131971E4FC00FB8790 /* Main.storyboard */,
 				F2C7C5161971E4FC00FB8790 /* Images.xcassets */,
 				F2C7C50D1971E4FC00FB8790 /* Supporting Files */,
@@ -107,6 +176,50 @@
 				F2C7C5211971E4FC00FB8790 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2C7C52C1971E51C00FB8790 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F2C7C52D1971E52E00FB8790 /* Swifter */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F2C7C52D1971E52E00FB8790 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				F2098BCF1971E67E0073B016 /* Dictionary+Swifter.swift */,
+				F2098BD01971E67E0073B016 /* Info.plist */,
+				F2098BD11971E67E0073B016 /* JSON.swift */,
+				F2098BD21971E67E0073B016 /* NSURL+Swifter.swift */,
+				F2098BD31971E67E0073B016 /* String+Swifter.swift */,
+				F2098BD51971E67E0073B016 /* Swifter.h */,
+				F2098BD61971E67E0073B016 /* Swifter.swift */,
+				F2098BD71971E67E0073B016 /* SwifterAccountsClient.swift */,
+				F2098BD81971E67E0073B016 /* SwifterAppOnlyClient.swift */,
+				F2098BD91971E67E0073B016 /* SwifterAuth.swift */,
+				F2098BDA1971E67E0073B016 /* SwifterClientProtocol.swift */,
+				F2098BDB1971E67E0073B016 /* SwifterCredential.swift */,
+				F2098BDC1971E67E0073B016 /* SwifterFavorites.swift */,
+				F2098BDD1971E67E0073B016 /* SwifterFollowers.swift */,
+				F2098BDE1971E67E0073B016 /* SwifterHelp.swift */,
+				F2098BDF1971E67E0073B016 /* SwifterHTTPRequest.swift */,
+				F2098BE01971E67E0073B016 /* SwifterLists.swift */,
+				F2098BE11971E67E0073B016 /* SwifterMessages.swift */,
+				F2098BE21971E67E0073B016 /* SwifterOAuthClient.swift */,
+				F2098BE31971E67E0073B016 /* SwifterPlaces.swift */,
+				F2098BE41971E67E0073B016 /* SwifterSavedSearches.swift */,
+				F2098BE51971E67E0073B016 /* SwifterSearch.swift */,
+				F2098BE61971E67E0073B016 /* SwifterSpam.swift */,
+				F2098BE71971E67E0073B016 /* SwifterStreaming.swift */,
+				F2098BE81971E67E0073B016 /* SwifterSuggested.swift */,
+				F2098BE91971E67E0073B016 /* SwifterTimelines.swift */,
+				F2098BEA1971E67E0073B016 /* SwifterTrends.swift */,
+				F2098BEB1971E67E0073B016 /* SwifterTweets.swift */,
+				F2098BEC1971E67E0073B016 /* SwifterUsers.swift */,
+			);
+			name = Swifter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +304,7 @@
 			files = (
 				F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */,
 				F2C7C5171971E4FC00FB8790 /* Images.xcassets in Resources */,
+				F2098BEE1971E67E0073B016 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +322,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2098BFC1971E67E0073B016 /* SwifterLists.swift in Sources */,
+				F2098BFE1971E67E0073B016 /* SwifterOAuthClient.swift in Sources */,
+				F2098BFB1971E67E0073B016 /* SwifterHTTPRequest.swift in Sources */,
+				F2098C021971E67E0073B016 /* SwifterSpam.swift in Sources */,
+				F2098BF01971E67E0073B016 /* NSURL+Swifter.swift in Sources */,
+				F2098BF81971E67E0073B016 /* SwifterFavorites.swift in Sources */,
+				F2098C081971E67E0073B016 /* SwifterUsers.swift in Sources */,
+				F2098BF71971E67E0073B016 /* SwifterCredential.swift in Sources */,
+				F2098C031971E67E0073B016 /* SwifterStreaming.swift in Sources */,
+				F2098C011971E67E0073B016 /* SwifterSearch.swift in Sources */,
+				F2098BF31971E67E0073B016 /* SwifterAccountsClient.swift in Sources */,
+				F2098BF51971E67E0073B016 /* SwifterAuth.swift in Sources */,
 				F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */,
 				F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */,
+				F2098BF11971E67E0073B016 /* String+Swifter.swift in Sources */,
+				F2098BF41971E67E0073B016 /* SwifterAppOnlyClient.swift in Sources */,
+				F2098BED1971E67E0073B016 /* Dictionary+Swifter.swift in Sources */,
+				F2098BF21971E67E0073B016 /* Swifter.swift in Sources */,
+				F2098BFF1971E67E0073B016 /* SwifterPlaces.swift in Sources */,
+				F2098C001971E67E0073B016 /* SwifterSavedSearches.swift in Sources */,
+				F2098C061971E67E0073B016 /* SwifterTrends.swift in Sources */,
+				F2098BEF1971E67E0073B016 /* JSON.swift in Sources */,
+				F2098BF91971E67E0073B016 /* SwifterFollowers.swift in Sources */,
+				F2098C051971E67E0073B016 /* SwifterTimelines.swift in Sources */,
+				F2098BF61971E67E0073B016 /* SwifterClientProtocol.swift in Sources */,
+				F2098C041971E67E0073B016 /* SwifterSuggested.swift in Sources */,
+				F2098BFD1971E67E0073B016 /* SwifterMessages.swift in Sources */,
+				F2098C071971E67E0073B016 /* SwifterTweets.swift in Sources */,
+				F2098BFA1971E67E0073B016 /* SwifterHelp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +466,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JDFTwitterSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDFTwitterSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,9 +481,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JDFTwitterSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDFTwitterSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -395,6 +542,7 @@
 				F2C7C5281971E4FC00FB8790 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2C7C5291971E4FC00FB8790 /* Build configuration list for PBXNativeTarget "JDFTwitterSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +551,7 @@
 				F2C7C52B1971E4FC00FB8790 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
