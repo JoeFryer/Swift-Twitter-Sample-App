@@ -35,6 +35,9 @@
 		F2098C061971E67E0073B016 /* SwifterTrends.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEA1971E67E0073B016 /* SwifterTrends.swift */; };
 		F2098C071971E67E0073B016 /* SwifterTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEB1971E67E0073B016 /* SwifterTweets.swift */; };
 		F2098C081971E67E0073B016 /* SwifterUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098BEC1971E67E0073B016 /* SwifterUsers.swift */; };
+		F2098C151971EAD60073B016 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C141971EAD60073B016 /* LoginViewController.swift */; };
+		F2098C181971F1F60073B016 /* JDFTwitterSampleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */; };
+		F2098C1C1971F22F0073B016 /* TwitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2098C1B1971F22F0073B016 /* TwitterButton.png */; };
 		F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */; };
 		F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C5111971E4FC00FB8790 /* ViewController.swift */; };
 		F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7C5131971E4FC00FB8790 /* Main.storyboard */; };
@@ -83,6 +86,9 @@
 		F2098BEB1971E67E0073B016 /* SwifterTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterTweets.swift; path = Libraries/Swifter/SwifterTweets.swift; sourceTree = "<group>"; };
 		F2098BEC1971E67E0073B016 /* SwifterUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterUsers.swift; path = Libraries/Swifter/SwifterUsers.swift; sourceTree = "<group>"; };
 		F2098C101971E9E30073B016 /* JDFTwitterSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDFTwitterSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F2098C141971EAD60073B016 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = JDFTwitterSample/Classes/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JDFTwitterSampleConstants.swift; path = Constants/JDFTwitterSampleConstants.swift; sourceTree = "<group>"; };
+		F2098C1B1971F22F0073B016 /* TwitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterButton.png; path = Resources/Images/TwitterButton.png; sourceTree = "<group>"; };
 		F2C7C50A1971E4FC00FB8790 /* JDFTwitterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDFTwitterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7C50E1971E4FC00FB8790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,9 +121,42 @@
 		F2098C091971E9140073B016 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F2098C131971EAAE0073B016 /* View Controllers */,
 			);
 			name = Classes;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		F2098C131971EAAE0073B016 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2098C141971EAD60073B016 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F2098C161971F1DB0073B016 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		F2098C191971F21B0073B016 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2098C1A1971F2200073B016 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F2098C1A1971F2200073B016 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2098C1B1971F22F0073B016 /* TwitterButton.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		F2C7C5011971E4FC00FB8790 = {
@@ -143,6 +182,8 @@
 			children = (
 				F2C7C52C1971E51C00FB8790 /* Libraries */,
 				F2098C091971E9140073B016 /* Classes */,
+				F2098C161971F1DB0073B016 /* Constants */,
+				F2098C191971F21B0073B016 /* Resources */,
 				F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */,
 				F2C7C5111971E4FC00FB8790 /* ViewController.swift */,
 				F2098C101971E9E30073B016 /* JDFTwitterSample-Bridging-Header.h */,
@@ -305,6 +346,7 @@
 				F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */,
 				F2C7C5171971E4FC00FB8790 /* Images.xcassets in Resources */,
 				F2098BEE1971E67E0073B016 /* Info.plist in Resources */,
+				F2098C1C1971F22F0073B016 /* TwitterButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +377,13 @@
 				F2098BF31971E67E0073B016 /* SwifterAccountsClient.swift in Sources */,
 				F2098BF51971E67E0073B016 /* SwifterAuth.swift in Sources */,
 				F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */,
+				F2098C181971F1F60073B016 /* JDFTwitterSampleConstants.swift in Sources */,
 				F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */,
 				F2098BF11971E67E0073B016 /* String+Swifter.swift in Sources */,
 				F2098BF41971E67E0073B016 /* SwifterAppOnlyClient.swift in Sources */,
 				F2098BED1971E67E0073B016 /* Dictionary+Swifter.swift in Sources */,
 				F2098BF21971E67E0073B016 /* Swifter.swift in Sources */,
+				F2098C151971EAD60073B016 /* LoginViewController.swift in Sources */,
 				F2098BFF1971E67E0073B016 /* SwifterPlaces.swift in Sources */,
 				F2098C001971E67E0073B016 /* SwifterSavedSearches.swift in Sources */,
 				F2098C061971E67E0073B016 /* SwifterTrends.swift in Sources */,
