@@ -38,6 +38,7 @@
 		F2098C151971EAD60073B016 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C141971EAD60073B016 /* LoginViewController.swift */; };
 		F2098C181971F1F60073B016 /* JDFTwitterSampleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */; };
 		F2098C1C1971F22F0073B016 /* TwitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2098C1B1971F22F0073B016 /* TwitterButton.png */; };
+		F2B1C2141972036100522653 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1C2131972036100522653 /* TimelineViewController.swift */; };
 		F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */; };
 		F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7C5111971E4FC00FB8790 /* ViewController.swift */; };
 		F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7C5131971E4FC00FB8790 /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		F2098C141971EAD60073B016 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = JDFTwitterSample/Classes/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JDFTwitterSampleConstants.swift; path = Constants/JDFTwitterSampleConstants.swift; sourceTree = "<group>"; };
 		F2098C1B1971F22F0073B016 /* TwitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterButton.png; path = Resources/Images/TwitterButton.png; sourceTree = "<group>"; };
+		F2B1C2131972036100522653 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = JDFTwitterSample/Classes/ViewControllers/TimelineViewController.swift; sourceTree = "<group>"; };
 		F2C7C50A1971E4FC00FB8790 /* JDFTwitterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDFTwitterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7C50E1971E4FC00FB8790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C7C50F1971E4FC00FB8790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F2098C141971EAD60073B016 /* LoginViewController.swift */,
+				F2B1C2131972036100522653 /* TimelineViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				F2098BF31971E67E0073B016 /* SwifterAccountsClient.swift in Sources */,
 				F2098BF51971E67E0073B016 /* SwifterAuth.swift in Sources */,
 				F2C7C5121971E4FC00FB8790 /* ViewController.swift in Sources */,
+				F2B1C2141972036100522653 /* TimelineViewController.swift in Sources */,
 				F2098C181971F1F60073B016 /* JDFTwitterSampleConstants.swift in Sources */,
 				F2C7C5101971E4FC00FB8790 /* AppDelegate.swift in Sources */,
 				F2098BF11971E67E0073B016 /* String+Swifter.swift in Sources */,
