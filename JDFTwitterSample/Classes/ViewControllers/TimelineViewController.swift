@@ -19,14 +19,17 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     // Views
     var tableView: UITableView?
     
+    // Nibs
+    var tweetCellNib: UINib?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "Tweets"
         
-
         self.setupView()
-        self.tableView!.registerClass(UITableViewCell.self, forCellReuseIdentifier: TimelineViewControllerCellIdentifier)
+        self.tweetCellNib = UINib(nibName: "TweetCell", bundle: NSBundle.mainBundle())
+        self.tableView?.registerNib(self.tweetCellNib, forCellReuseIdentifier: TimelineViewControllerCellIdentifier)
         self.fetchTwitterHomeStream()
     }
     
@@ -47,7 +50,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
             20,
             sinceID: nil,
             maxID: nil,
-            trimUser: true,
+            trimUser: false,
             contributorDetails: false,
             includeEntities: true,
             success: {
@@ -55,6 +58,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 if statuses {
                     self.tweets = statuses!
+                    println("\(self.tweets[1])")
                     self.tableView?.reloadData()
                 }
             },
@@ -83,8 +87,12 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(TimelineViewControllerCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel.text = tweets[indexPath.row]["text"].string
+        let tweet = tweets[indexPath.row]
+        let user = tweet["user"]
+        var cell: TweetCell = tableView.dequeueReusableCellWithIdentifier(TimelineViewControllerCellIdentifier, forIndexPath: indexPath) as TweetCell
+        cell.tweetBodyLabel.text = tweet["text"].string
+        cell.fullNameLabel.text = user["name"].string
+        cell.usernameLabel.text = user["screen_name"].string
         return cell
     }
     
