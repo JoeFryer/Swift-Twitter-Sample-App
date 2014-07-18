@@ -38,6 +38,7 @@
 		F2098C151971EAD60073B016 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C141971EAD60073B016 /* LoginViewController.swift */; };
 		F2098C181971F1F60073B016 /* JDFTwitterSampleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */; };
 		F2098C1C1971F22F0073B016 /* TwitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2098C1B1971F22F0073B016 /* TwitterButton.png */; };
+		F20AB2A81979D43200796FA6 /* TwitterAvatarPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AB2A71979D43200796FA6 /* TwitterAvatarPlaceholder.png */; };
 		F2488A4D1973250F00FD172A /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2488A4C1973250F00FD172A /* TweetCell.swift */; };
 		F2488A4F1973257700FD172A /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2488A4E1973257700FD172A /* TweetCell.xib */; };
 		F2B1C2141972036100522653 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1C2131972036100522653 /* TimelineViewController.swift */; };
@@ -109,6 +110,7 @@
 		F2098C141971EAD60073B016 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = JDFTwitterSample/Classes/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		F2098C171971F1F60073B016 /* JDFTwitterSampleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JDFTwitterSampleConstants.swift; path = Constants/JDFTwitterSampleConstants.swift; sourceTree = "<group>"; };
 		F2098C1B1971F22F0073B016 /* TwitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterButton.png; path = Resources/Images/TwitterButton.png; sourceTree = "<group>"; };
+		F20AB2A71979D43200796FA6 /* TwitterAvatarPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterAvatarPlaceholder.png; path = Resources/Images/TwitterAvatarPlaceholder.png; sourceTree = "<group>"; };
 		F2488A4C1973250F00FD172A /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetCell.swift; path = JDFTwitterSample/Classes/Views/TweetCell.swift; sourceTree = "<group>"; };
 		F2488A4E1973257700FD172A /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetCell.xib; path = JDFTwitterSample/Classes/Views/TweetCell.xib; sourceTree = "<group>"; };
 		F2B1C2131972036100522653 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = JDFTwitterSample/Classes/ViewControllers/TimelineViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		F2098C1A1971F2200073B016 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F20AB2A71979D43200796FA6 /* TwitterAvatarPlaceholder.png */,
 				F2098C1B1971F22F0073B016 /* TwitterButton.png */,
 			);
 			name = Images;
@@ -482,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20AB2A81979D43200796FA6 /* TwitterAvatarPlaceholder.png in Resources */,
 				F2C7C5151971E4FC00FB8790 /* Main.storyboard in Resources */,
 				F2488A4F1973257700FD172A /* TweetCell.xib in Resources */,
 				F2C7C5171971E4FC00FB8790 /* Images.xcassets in Resources */,

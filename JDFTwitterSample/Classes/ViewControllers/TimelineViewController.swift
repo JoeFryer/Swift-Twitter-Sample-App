@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 let TimelineViewControllerCellIdentifier = "TimelineViewControllerCellIdentifier"
 
 class TimelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -93,6 +94,12 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.tweetBodyLabel.text = tweet["text"].string
         cell.fullNameLabel.text = user["name"].string
         cell.usernameLabel.text = user["screen_name"].string
+        cell.profileImageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string:user["profile_image_url"].string)), placeholderImage: UIImage(named: "TwitterAvatarPlaceholder.png"), success:{ (request: NSURLRequest!, response: NSHTTPURLResponse!, image: UIImage!) -> Void in
+            if tableView.indexPathsForVisibleRows().bridgeToObjectiveC().containsObject(indexPath) {
+                cell.profileImageView.image = image;
+            }
+            }, failure: nil)
+        
         return cell
     }
     

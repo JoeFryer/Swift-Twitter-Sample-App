@@ -25,5 +25,7 @@ class TweetCell: UITableViewCell {
         self.tweetBodyLabel.font = UIFont(name: "AlNile", size: 12.0)
         self.tweetBodyLabel.numberOfLines = 0
         self.tweetBodyLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2
+        self.profileImageView.layer.masksToBounds = true
     }
 }
