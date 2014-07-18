@@ -16,12 +16,17 @@ let LoginViewControllerTwitterButtonEdgeLength: CGFloat = 100.0
 class LoginViewController: UIViewController {
     
     var twitterButton: UIButton?
-    let useACAccount = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setupView()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.attemptLoginWarningIfDenied(false)
     }
     
     func setupView() {
@@ -32,51 +37,33 @@ class LoginViewController: UIViewController {
     }
     
     func twitterButtonPressed() {
-        let failureHandler: ((NSError) -> Void) = {
-            error in
-            
-            self.alert(error.localizedDescription)
-        }
+        self.attemptLoginWarningIfDenied(true)
+    }
+    
+    func attemptLoginWarningIfDenied(warnIfDenied: Bool) {
+        let accountStore = ACAccountStore()
+        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         
-        if useACAccount {
-            let accountStore = ACAccountStore()
-            let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+        accountStore.requestAccessToAccountsWithType(accountType, options: nil) {
+            granted, error in
             
-            accountStore.requestAccessToAccountsWithType(accountType, options: nil) {
-                granted, error in
+            if granted {
+                let twitterAccounts = accountStore.accountsWithAccountType(accountType)
                 
-                if granted {
-                    let twitterAccounts = accountStore.accountsWithAccountType(accountType)
-                    
-                    if twitterAccounts {
-                        if twitterAccounts.count == 0 {
-                            self.alert("There are no Twitter accounts configured. You can add or create a Twitter account in Settings.")
-                        } else {
-                            let twitterAccount = twitterAccounts[0] as ACAccount
-                            let swifter = Swifter(account: twitterAccount)
-                            self.presentTimelineVCWithSwifter(swifter)
-                        }
-                    } else {
+                if twitterAccounts {
+                    if twitterAccounts.count == 0 {
                         self.alert("There are no Twitter accounts configured. You can add or create a Twitter account in Settings.")
+                    } else {
+                        let twitterAccount = twitterAccounts[0] as ACAccount
+                        let swifter = Swifter(account: twitterAccount)
+                        self.presentTimelineVCWithSwifter(swifter)
                     }
+                } else {
+                    self.alert("There are no Twitter accounts configured. You can add or create a Twitter account in Settings.")
                 }
+            } else if warnIfDenied {
+                self.alert("You have denied JDFTwitterSample access to the Twitter Accounts. You can change this in Settings.")
             }
-        } else {
-            let swifter = Swifter(
-                consumerKey: "Cw43V1kgpeCWiJPUKARXCe3pF",
-                consumerSecret: "9AqmJ1kdq5t3W9LONUlIBiRJqiA4QqFl25fcNxGoxHUbaXjNZ7"
-            )
-            
-            swifter.authorizeWithCallbackURL(
-                NSURL(string: "swifter://success"),
-                success: {
-                    accessToken, response in
-                    
-                    self.alert("Successfully authorized with App API")
-                    self.presentTimelineVCWithSwifter(swifter)
-                },
-                failure: failureHandler
-            )
         }
     }
     
