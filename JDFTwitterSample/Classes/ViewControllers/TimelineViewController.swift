@@ -93,7 +93,8 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         var cell: TweetCell = tableView.dequeueReusableCellWithIdentifier(TimelineViewControllerCellIdentifier, forIndexPath: indexPath) as TweetCell
         cell.tweetBodyLabel.text = tweet["text"].string
         cell.fullNameLabel.text = user["name"].string
-        cell.usernameLabel.text = user["screen_name"].string
+        let username = (user["screen_name"].string)
+        cell.usernameLabel.text = "@\(username)"
         cell.profileImageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string:user["profile_image_url"].string)), placeholderImage: UIImage(named: "TwitterAvatarPlaceholder.png"), success:{ (request: NSURLRequest!, response: NSHTTPURLResponse!, image: UIImage!) -> Void in
             if tableView.indexPathsForVisibleRows().bridgeToObjectiveC().containsObject(indexPath) {
                 cell.profileImageView.image = image;
@@ -104,6 +105,6 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
-        return 85.0
+        return 100.0
     }
 }
