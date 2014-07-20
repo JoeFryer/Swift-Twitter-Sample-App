@@ -31,7 +31,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         self.setupView()
         self.tweetCellNib = UINib(nibName: "TweetCell", bundle: NSBundle.mainBundle())
         self.tableView?.registerNib(self.tweetCellNib, forCellReuseIdentifier: TimelineViewControllerCellIdentifier)
-        self.fetchTwitterHomeStream()
+        self.fetchTwitterHomeStreamWithMaxID(nil)
     }
     
     func setupView() {
@@ -41,7 +41,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         self.tableView!.delegate = self
     }
     
-    func fetchTwitterHomeStream() {
+    func fetchTwitterHomeStreamWithMaxID(maxID: Int?) {
         let failureHandler: ((NSError) -> Void) = {
             error in
             self.alert(error.localizedDescription)
@@ -50,7 +50,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         self.account!.getStatusesHomeTimelineWithCount(
             20,
             sinceID: nil,
-            maxID: nil,
+            maxID: maxID,
             trimUser: false,
             contributorDetails: false,
             includeEntities: true,
@@ -58,7 +58,7 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 (statuses: [JSONValue]?) in
                 
                 if statuses {
-                    self.tweets = statuses!
+                    self.tweets += statuses!
                     println("\(self.tweets[1])")
                     self.tableView?.reloadData()
                 }
@@ -106,5 +106,12 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
         return 100.0
+    }
+    
+    func tableView(tableView: UITableView!, willDisplayCell cell: UITableViewCell!, forRowAtIndexPath indexPath: NSIndexPath!) {
+        if indexPath.row == tweets.count - 1 {
+            let tweet = tweets[indexPath.row]
+            fetchTwitterHomeStreamWithMaxID(tweet["id"].integer)
+        }
     }
 }
